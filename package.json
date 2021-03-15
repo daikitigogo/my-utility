@@ -1,0 +1,49 @@
+{
+  "name": "my-utility",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:daikitigogo/my-utility.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tsconfig/node12": "^1.0.7",
+    "@types/jest": "^26.0.20",
+    "@types/node": "^14.14.32",
+    "jest": "^26.6.3",
+    "ts-jest": "^26.5.3",
+    "typescript": "^4.2.3"
+  },
+  "private": "true",
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
+    "globals": {
+      "ts-jest": {
+        "tsconfig": "tsconfig.json"
+      }
+    },
+    "testMatch": [
+      "**/__test__/**/*.test.ts"
+    ]
+  },
+  "dependencies": {
+    "@types/better-sqlite3": "^5.4.1",
+    "@types/log4js": "^2.3.5",
+    "better-sqlite3": "^7.1.2",
+    "log4js": "^6.3.0"
+  }
+}
